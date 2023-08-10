@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "to": "/",
+        "label": "Home"
+    },
+    {
+        "id": 2,
+        "to": "/pessoa-usuaria",
+        "label": "Pessoa Usuária"
+    },
+    {
+        "id": 3,
+        "to": "/profissional",
+        "label": "Profissional"
+    }
+]

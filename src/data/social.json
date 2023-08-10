@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "to": "https://www.facebook.com/lacrei.saude",
+        "label": "Facebook"
+    },
+    {
+        "id": 2,
+        "to": "https://www.instagram.com/lacrei.saude",
+        "label": "Instagram"
+    },
+    {
+        "id": 3,
+        "to": "https://www.linkedin.com/company/lacrei",
+        "label": "LinkedIn"
+    }
+]
