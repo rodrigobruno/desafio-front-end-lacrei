@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { MEDIA } from 'styles/variables';
 
+export const Container = styled.div`
+    margin-bottom: 2.6rem;
+`;
+
 export const CallToAction = styled.div`
     align-items: center;
     justify-content: center;

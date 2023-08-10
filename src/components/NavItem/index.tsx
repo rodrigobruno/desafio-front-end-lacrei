@@ -3,12 +3,16 @@ import { Item } from './style';
 interface Props {
     to: string;
     children: string;
-    actived?: 'green' | 'gray';
+    $activedColor?: 'green' | 'black';
 }
 
-export default function NavItem({ to, children, actived = 'gray' }: Props) {
+export default function NavItem({
+    to,
+    children,
+    $activedColor = 'black',
+}: Props) {
     return (
-        <Item to={to} actived={actived}>
+        <Item to={to} $activedColor={$activedColor}>
             {children}
         </Item>
     );

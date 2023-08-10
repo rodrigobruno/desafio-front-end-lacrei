@@ -3,7 +3,7 @@ import { COLORS, MEDIA, TRANSITION } from 'styles/variables';
 import { NavLink } from 'react-router-dom';
 
 interface Props {
-    actived: 'green' | 'gray';
+    $activedColor: 'green' | 'black';
 }
 
 export const Item = styled(NavLink)<Props>`
@@ -22,8 +22,9 @@ export const Item = styled(NavLink)<Props>`
     }
 
     &.active {
-        color: ${({ actived }) =>
-            actived === 'green' ? COLORS.green : COLORS.grey};
+        color: ${({ $activedColor }) =>
+            $activedColor === 'green' ? COLORS.green : COLORS.black};
         font-weight: 700;
+        letter-spacing: 0;
     }
 `;

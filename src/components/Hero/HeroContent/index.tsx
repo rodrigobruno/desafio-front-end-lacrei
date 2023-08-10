@@ -3,15 +3,21 @@ import { Container, Content, Lead, Title } from './style';
 interface Props {
     title: string;
     lead: string;
+    $quote?: boolean;
     children?: React.ReactNode;
 }
 
-export default function HeroContent({ title, lead, children }: Props) {
+export default function HeroContent({
+    title,
+    lead,
+    $quote = false,
+    children,
+}: Props) {
     return (
-        <Container>
+        <Container $quote>
             <Content>
                 <Title>{title}</Title>
-                <Lead>{lead}</Lead>
+                <Lead $quote={$quote}>{lead}</Lead>
             </Content>
             {children}
         </Container>

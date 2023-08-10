@@ -11,7 +11,11 @@ export default function Header() {
                     <Brand to='/'>Lacrei</Brand>
                     <Nav>
                         {menu.map((item) => (
-                            <NavItem key={item.id} to={item.to} actived='green'>
+                            <NavItem
+                                key={item.id}
+                                to={item.to}
+                                $activedColor='green'
+                            >
                                 {item.label}
                             </NavItem>
                         ))}

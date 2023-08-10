@@ -5,18 +5,25 @@ import HeroIllustration from './HeroIllustration';
 interface Props {
     title: string;
     lead: string;
-    Illustration: React.ReactNode;
+    Illustration?: React.ReactNode;
+    $quote?: boolean;
     children?: React.ReactNode;
 }
 
-export default function Hero({ title, lead, Illustration, children }: Props) {
+export default function Hero({
+    title,
+    lead,
+    Illustration,
+    $quote = false,
+    children,
+}: Props) {
     return (
         <Container>
-            <HeroContent title={title} lead={lead}>
+            <HeroContent title={title} lead={lead} $quote={$quote}>
                 {children}
             </HeroContent>
 
-            <HeroIllustration Illustration={Illustration} />
+            {Illustration && <HeroIllustration Illustration={Illustration} />}
         </Container>
     );
 }
